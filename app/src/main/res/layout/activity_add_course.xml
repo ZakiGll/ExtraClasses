@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/rin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter class informations"
+            android:textSize="26sp"
+            android:textColor="#DE0539"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium">
+        </TextView>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rin"
+        android:layout_above="@+id/submitbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="64dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Classname"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="#DE0539"
+                    android:hint="Class name"
+                    android:inputType="textEmailAddress"
+                    android:textCursorDrawable="@color/black"
+                    ></EditText>
+
+                <EditText
+                    android:id="@+id/ClassYear"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#DE0539"
+                    android:hint="Class year"
+                    android:inputType="textEmailAddress"
+                    android:textCursorDrawable="@color/black"></EditText>
+
+                <EditText
+                    android:id="@+id/ClassModule"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#DE0539"
+                    android:hint="Module"
+                    android:inputType="textEmailAddress"
+                    android:textCursorDrawable="@color/black"></EditText>
+
+                <EditText
+                    android:id="@+id/ClasssDesciption"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#DE0539"
+                    android:hint="Desciption"
+                    android:inputType="text"
+                    android:textCursorDrawable="@color/black"></EditText>
+
+                <EditText
+                    android:id="@+id/ClassAdress"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#DE0539"
+                    android:hint="Adress"
+                    android:textCursorDrawable="@color/black"></EditText>
+
+                <EditText
+                    android:id="@+id/ClassTime"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#DE0539"
+                    android:hint="Time"
+                    android:inputType="datetime"
+                    android:textCursorDrawable="@color/black"></EditText>
+                <EditText
+                    android:id="@+id/ClassPrice"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#DE0539"
+                    android:hint="Price"
+                    android:textCursorDrawable="@color/black"></EditText>
+
+                <Button
+                    android:id="@+id/datePickerButton"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:text="JAN 01 2020"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    style="?android:spinnerStyle"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    android:layout_marginTop="10dp"
+                    android:onClick="openDatePicker"/>
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/submitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#DE0539"
+            android:onClick="AddCourse"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="19sp"
+            app:cornerRadius="70dp"></Button>
+    </LinearLayout>
+</RelativeLayout>

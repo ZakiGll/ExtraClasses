@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "524641235045",
+    "firebase_url": "https://extra-classes-e11d1-default-rtdb.firebaseio.com",
+    "project_id": "extra-classes-e11d1",
+    "storage_bucket": "extra-classes-e11d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524641235045:android:6622d49947d69f3d39968c",
+        "android_client_info": {
+          "package_name": "com.example.extraclasses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524641235045-9na1brhf6kvi21hvdmbdnfkm3iia7h5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSWQziEezVGJ5uGhG_c_d4Pxvh9U3ap1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524641235045-9na1brhf6kvi21hvdmbdnfkm3iia7h5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

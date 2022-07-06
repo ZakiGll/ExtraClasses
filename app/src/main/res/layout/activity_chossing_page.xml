@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="230dp"
+            android:src="@drawable/undraw_true_friends_c94g"></ImageView>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, choose please !"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@id/lin">
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#DE0539"
+            android:onClick="ToStudent"
+            android:text="I'm student"
+            android:textAllCaps="false"
+            android:textSize="19sp"
+            app:cornerRadius="30dp"></Button>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#DE0539"
+            android:onClick="ToTeacher"
+            android:text="I'm teacher"
+            android:textAllCaps="false"
+            android:textSize="19sp"
+            app:cornerRadius="30dp">
+
+        </Button>
+
+
+    </LinearLayout>
+</RelativeLayout>

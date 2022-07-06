@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="230dp"
+            android:src="@drawable/undraw_exams_g4ow"></ImageView>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, login please !"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@id/lin">
+
+        <EditText
+            android:id="@+id/emaillog"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#DE0539"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@color/black"></EditText>
+
+        <EditText
+            android:id="@+id/passwordlog"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#DE0539"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@color/black"></EditText>
+
+        <Button
+            android:id="@+id/LoginBtnStudent"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#DE0539"
+            android:onClick="onLogin"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="19sp"></Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:minHeight="48dp"
+            android:onClick="changeToRegister"
+            android:text="Creat new account"></TextView>
+    </LinearLayout>
+</RelativeLayout>

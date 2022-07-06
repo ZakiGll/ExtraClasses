@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/status_icon"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/green_circle" />
+
+        <TextView
+            android:id="@+id/DCourcePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Price"
+            android:textColor="#4AE022" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/CourseNameInList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Course name"
+            android:textColor="#DE0539"
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/CourseModuleInList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course module"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/CourseAdressInList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:drawableTint="#B0B0B0"
+            android:text="Course address"
+            android:textColor="#B0B0B0" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

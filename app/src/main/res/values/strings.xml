@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Extra classes</string>
+    <string-array name="prsn_type">
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
+</resources>
